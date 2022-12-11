@@ -12,7 +12,8 @@
 :root{
     /* --color-bg: #1f1f38; */
     --color-bg: #1f2a38;
-    --color-bg-variant: #2c2c6c;
+    /* --color-bg-variant: #2c2c6c; */
+    --color-bg-variant: #0e857ba8;
     /* --color-primary: #4db5ff; */
     --color-primary: #4dffe4b1;
     --color-primary-variant: rgba(77,181,255,0.4);
@@ -29,6 +30,7 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -41,6 +43,8 @@ body{
     color: var(--color-white);
     line-height: 1.7;
     background-image:url(../src/assets/bg-texture.png) ;
+    height: 100%;
+    width: 100vw;
 }
 
 /*=================== GENERAL STYLES ===================*/
@@ -61,6 +65,7 @@ h5{
 h1{
     font-size: 2.5rem;
 }
+
 
 section{
     margin-top: 10vh;
