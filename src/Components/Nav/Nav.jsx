@@ -20,19 +20,19 @@ const Nav = () => {
     {
       setActiveNav('home');
     }
-    else if(scrlPos >= 1.1*wHeight && scrlPos < 2.2*wHeight)
+    else if(scrlPos >= 1.1*wHeight-10 && scrlPos < 2.2*wHeight - 10)
     {
       setActiveNav('about');
     }
-    else if(scrlPos >= 2.2*wHeight && scrlPos < 3.3*wHeight)
+    else if(scrlPos >= 2.2*wHeight-10 && scrlPos < 3.3*wHeight - 10)
     {
       setActiveNav('exp');
     }
-    else if(scrlPos >= 3.3*wHeight && scrlPos < 4.4*wHeight)
+    else if(scrlPos >= 3.3*wHeight-10 && scrlPos < 4.4*wHeight - 10)
     {
       setActiveNav('portfolio');
     }
-    else if(scrlPos >= 4.4*wHeight && scrlPos < 5.5*wHeight)
+    else if(scrlPos >= 4.4*wHeight-10 && scrlPos < 5.5*wHeight)
     {
       setActiveNav('contact');
     }
