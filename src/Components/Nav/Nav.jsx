@@ -7,8 +7,38 @@ import "./Nav.css";
 
 import { useState } from "react";
 
+
+
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("home");
+
+  /* Currently using normal javascript way to change navbar, since I don't know how to properly use userefs and useEffect */
+  const changeNav = ()=>{
+    const scrlPos = window.scrollY;
+    const wHeight = window.innerHeight;
+    if(scrlPos < wHeight )
+    {
+      setActiveNav('home');
+    }
+    else if(scrlPos >= wHeight && scrlPos < 2.2*wHeight)
+    {
+      setActiveNav('about');
+    }
+    else if(scrlPos >= 2.2*wHeight && scrlPos < 3.3*wHeight)
+    {
+      setActiveNav('exp');
+    }
+    else if(scrlPos >= 3.3*wHeight && scrlPos < 4.4*wHeight)
+    {
+      setActiveNav('portfolio');
+    }
+    else if(scrlPos >= 4.4*wHeight && scrlPos < 5*wHeight)
+    {
+      setActiveNav('contact');
+    }
+  }
+
+  window.addEventListener('scroll', changeNav);
   return (
     <nav>
       {/* HOME */}
