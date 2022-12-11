@@ -20,7 +20,7 @@ const Nav = () => {
     {
       setActiveNav('home');
     }
-    else if(scrlPos >= wHeight && scrlPos < 2.2*wHeight)
+    else if(scrlPos >= 1.1*wHeight && scrlPos < 2.2*wHeight)
     {
       setActiveNav('about');
     }
@@ -32,7 +32,7 @@ const Nav = () => {
     {
       setActiveNav('portfolio');
     }
-    else if(scrlPos >= 4.4*wHeight && scrlPos < 5*wHeight)
+    else if(scrlPos >= 4.4*wHeight && scrlPos < 5.5*wHeight)
     {
       setActiveNav('contact');
     }
