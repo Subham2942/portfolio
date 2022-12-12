@@ -12,8 +12,8 @@ footer a {
   color: var(--color-bg);
 }
 
-.footer_logo {
-  font-size: 2rem;
+.footer__logo {
+  font-size: 1.5rem;
   font-weight: 500;
 
   margin-bottom: 2rem;
