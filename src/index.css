@@ -13,7 +13,8 @@
     /* --color-bg: #1f1f38; */
     --color-bg: #1f2a38;
     /* --color-bg-variant: #2c2c6c; */
-    --color-bg-variant: #0e857ba8;
+    --color-bg-variant: #0e857bad;
+    --color-bg-variant-2: #0e857b;
     /* --color-primary: #4db5ff; */
     --color-primary: #4dffe4b1;
     --color-primary-variant: rgba(77,181,255,0.4);
@@ -69,7 +70,6 @@ h1{
 
 section{
     margin-top: 10vh;
-    height: 100vh;
 }
 
 section > h5,
