@@ -1,5 +1,5 @@
 import React from 'react'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/about_me.png'
 
 import {FaUserGraduate, FaBook} from 'react-icons/fa'
 import {AiFillProject} from 'react-icons/ai'

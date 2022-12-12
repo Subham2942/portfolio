@@ -20,9 +20,15 @@
 
 .about__me-image{
     border-radius: 2rem;
-    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
     transform: rotate(10deg);
     transition: var(--transition);
+    background: var(--color-primary-variant-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .about__me-image:hover{
