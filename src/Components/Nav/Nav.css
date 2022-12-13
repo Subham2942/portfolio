@@ -3,14 +3,15 @@ nav{
     width: max-content;
     z-index: 2;
     position: fixed;
-    padding: 0.7rem 1.7rem;
+    padding: 1.7rem 0.7rem;
     border-radius: 3rem;
-    left: 50%;
     transform: translateX(-50%); 
-    bottom: 2rem;
     display: flex;
+    flex-direction: column;
     gap: 0.8rem;
     backdrop-filter: blur(15px);
+    right: 0;
+    top: 25%;
 }
 
 nav a{
@@ -29,4 +30,16 @@ nav a:hover{
 nav a.active{
     background:var(--color-bg-variant) ;
     color: var(--color-white);
+}
+
+/*================== MEDIA QUERIES (MEDIEUM & SMALL DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+    nav{
+        top: auto;
+        left: 50%;
+        right: auto;
+        bottom: 2rem;
+        flex-direction: row;
+        padding: 0.7rem 1.7rem;
+    }
 }
