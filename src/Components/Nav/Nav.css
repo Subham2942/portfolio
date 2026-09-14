@@ -1,0 +1,45 @@
+nav{
+    background: rgba(0,0,0,0.3);
+    width: max-content;
+    z-index: 2;
+    position: fixed;
+    padding: 1.7rem 0.7rem;
+    border-radius: 3rem;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    backdrop-filter: blur(15px);
+    right: 0;
+    top: 25%;
+}
+
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius:90% ;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    background: rgba(0,0,0,0.4);
+}
+
+nav a.active{
+    background:var(--color-bg-variant) ;
+    color: var(--color-white);
+}
+
+/*================== MEDIA QUERIES (MEDIEUM & SMALL DEVICES) ==================*/
+@media screen and (max-width: 1024px) {
+    nav{
+        top: auto;
+        left: 50%;
+        right: auto;
+        bottom: 2rem;
+        flex-direction: row;
+        padding: 0.7rem 1.7rem;
+    }
+}
